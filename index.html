@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Restaurante Trem de Minas</title>
+  <meta name="description" content="Comida mineira com sabor excelente em Lagoa Santa. Delivery para toda a região." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html" aria-label="Página inicial">
+        <span class="brand__logo" aria-hidden="true">🚂</span>
+        <span class="brand__text">
+          <strong>Restaurante</strong>
+          <span>Trem de Minas</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="./cardapio.html">Cardápio</a>
+        <a class="nav__cta" href="#contato">Pedir no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- Banner principal -->
+<section class="banner">
+  <img src="https://www.grupopq.com.br/wp-content/uploads/2020/11/PQ-feijao-tropeiro-1024x1024.jpg"
+       alt="Feijão tropeiro - Restaurante Trem de Minas">
+  <div class="banner__overlay">
+    <h1>O verdadeiro sabor de Minas</h1>
+    <p>Comida mineira com sabor excelente • Delivery para toda Lagoa Santa</p>
+    <a class="btn btn--primary" href="cardapio.html">Ver Cardápio</a>
+  </div>
+</section>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Comida mineira • Delivery • Lagoa Santa</p>
+          <h1>O sabor de Minas chegando até você.</h1>
+          <p class="lead">
+            No <strong>Restaurante Trem de Minas</strong>, você encontra comida mineira com
+            <strong>sabor excelente</strong> e aquele tempero caseiro de verdade.
+            Fazemos <strong>delivery</strong> e atendemos <strong>toda a região de Lagoa Santa</strong>.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="./cardapio.html">Ver Cardápio</a>
+
+            <!-- Troque o número e a mensagem -->
+            <a class="btn btn--ghost" id="whats-cta"
+               href="https://wa.me/5531988438457?text=Olá!%20Quero%20fazer%20um%20pedido%20no%20Restaurante%20Trem%20de%20Minas."
+               target="_blank" rel="noopener">
+              Pedir no WhatsApp
+            </a>
+          </div>
+
+          <div class="info-cards">
+            <div class="card">
+              <h3>📍 Endereço</h3>
+              <p>Av. Acdo. Nilo Figueiredo, 775 - Centro, Lagoa Santa</p>
+              <a class="link"
+                 href="https://www.google.com/maps/search/?api=1&query=Av.%20Acdo.%20Nilo%20Figueiredo%2C%20775%20-%20Centro%2C%20Lagoa%20Santa"
+                 target="_blank" rel="noopener">
+                Abrir no mapa
+              </a>
+            </div>
+            <div class="card">
+              <h3>🛵 Delivery</h3>
+              <p>Atendemos toda a região de Lagoa Santa com agilidade e cuidado.</p>
+              <p class="muted">Consulte taxa e tempo de entrega no WhatsApp.</p>
+            </div>
+            <div class="card">
+              <h3>🍲 Especialidade</h3>
+              <p>Comida mineira bem servida, com tempero caseiro e qualidade.</p>
+              <p class="muted">Pratos do dia e opções fixas no cardápio.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="photo">
+            <div class="photo__top">
+              <span>🍛</span><span>🥘</span><span>🧀</span><span>🌶️</span>
+            </div>
+            <div class="photo__body">
+              <p class="photo__title">Trem de Minas</p>
+              <p class="photo__subtitle">Comida mineira com sabor excelente</p>
+              <ul class="photo__list">
+                <li>✅ Entrega na região</li>
+                <li>✅ Pratos bem servidos</li>
+                <li>✅ Caseiro de verdade</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container section__grid">
+        <div>
+          <h2>Faça seu pedido</h2>
+          <p class="lead">
+            Chame no WhatsApp e faça seu pedido. Se preferir, primeiro veja o cardápio.
+          </p>
+          <div class="actions">
+            <a class="btn btn--primary" href="./cardapio.html">Abrir Cardápio</a>
+            <a class="btn btn--ghost"
+               href="https://wa.me/5531988438457?text=Olá!%20Quero%20fazer%20um%20pedido%20no%20Restaurante%20Trem%20de%20Minas."
+               target="_blank" rel="noopener">
+              Chamar no WhatsApp
+            </a>
+          </div>
+          <p class="muted small">
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Informações</h3>
+          <ul class="list">
+            <li><strong>Restaurante:</strong> Trem de Minas</li>
+            <li><strong>Endereço:</strong> Av. Acdo. Nilo Figueiredo, 775 - Centro, Lagoa Santa</li>
+            <li><strong>Atendimento:</strong> Delivery para toda a região</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Restaurante Trem de Minas — Lagoa Santa/MG</p>
+      <p class="muted">Comida mineira com sabor excelente • Delivery</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

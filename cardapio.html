@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cardápio • Restaurante Trem de Minas</title>
+  <meta name="description" content="Cardápio do Restaurante Trem de Minas — comida mineira com delivery em Lagoa Santa." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html" aria-label="Página inicial">
+        <span class="brand__logo" aria-hidden="true">🚂</span>
+        <span class="brand__text">
+          <strong>Restaurante</strong>
+          <span>Trem de Minas</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="./index.html">Início</a>
+        <a class="nav__cta"
+           href="https://wa.me/5531988438457?text=Olá!%20Quero%20fazer%20um%20pedido%20no%20Restaurante%20Trem%20de%20Minas."
+           target="_blank" rel="noopener">
+          Pedir no WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="page-head">
+        <h1>Cardápio</h1>
+        <p class="lead">
+          Escolha seus itens e peça pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <section class="card">
+          <h2>🍲 Pratos do dia</h2>
+          <p class="muted">Sugestão: atualize diariamente.</p>
+
+          <div class="menu-item">
+            <div>
+              <h3>Feijão tropeiro + carne + ovo</h3>
+              <p class="muted">Acompanha arroz e vinagrete.</p>
+            </div>
+            <span class="price">R$ --,--</span>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h3>Frango com quiabo</h3>
+              <p class="muted">Com arroz e angu.</p>
+            </div>
+            <span class="price">R$ --,--</span>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h3>Costelinha com mandioca</h3>
+              <p class="muted">Bem temperada, bem servida.</p>
+            </div>
+            <span class="price">R$ --,--</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🥘 Marmitex</h2>
+          <p class="muted">Exemplo de tamanhos (ajuste conforme seu padrão).</p>
+
+          <div class="menu-item">
+            <div>
+              <h3>Pequena</h3>
+              <p class="muted">1 proteína + 2 guarnições.</p>
+            </div>
+            <span class="price">R$ --,--</span>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h3>Média</h3>
+              <p class="muted">1 proteína + 3 guarnições.</p>
+            </div>
+            <span class="price">R$ --,--</span>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h3>Grande</h3>
+              <p class="muted">2 proteínas + 3 guarnições.</p>
+            </div>
+            <span class="price">R$ --,--</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🧀 Acompanhamentos</h2>
+
+          <div class="menu-item">
+            <div><h3>Torresmo</h3><p class="muted">Porção.</p></div>
+            <span class="price">R$ --,--</span>
+          </div>
+          <div class="menu-item">
+            <div><h3>Farofa da casa</h3><p class="muted">Porção.</p></div>
+            <span class="price">R$ --,--</span>
+          </div>
+          <div class="menu-item">
+            <div><h3>Salada</h3><p class="muted">Porção.</p></div>
+            <span class="price">R$ --,--</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🥤 Bebidas</h2>
+
+          <div class="menu-item">
+            <div><h3>Refrigerante (lata)</h3></div>
+            <span class="price">R$ --,--</span>
+          </div>
+          <div class="menu-item">
+            <div><h3>Suco</h3></div>
+            <span class="price">R$ --,--</span>
+          </div>
+          <div class="menu-item">
+            <div><h3>Água</h3></div>
+            <span class="price">R$ --,--</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="cta-bar">
+        <div>
+          <strong>Pronto para pedir?</strong>
+          <p class="muted">Chame no WhatsApp e faça seu pedido, informando os itens e o endereço de entrega.</p>
+        </div>
+        <a class="btn btn--primary"
+           href="https://wa.me/5531988438457?text=Olá!%20Quero%20fazer%20um%20pedido%20no%20Restaurante%20Trem%20de%20Minas."
+           target="_blank" rel="noopener">
+          Pedir agora
+        </a>
+      </div>
+
+      <p class="muted small">
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Restaurante Trem de Minas — Lagoa Santa/MG</p>
+      <p class="muted">Av. Acdo. Nilo Figueiredo, 775 - Centro, Lagoa Santa</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
