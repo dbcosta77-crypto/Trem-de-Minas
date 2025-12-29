@@ -591,3 +591,48 @@ body{
   outline-offset: 3px;
   border-radius: 12px;
 }
+
+/* ============================
+   COLUNAS
+   ============================ */
+
+/* Marmitex com 2 colunas (Média / Grande) */
+.menu-2col{
+  display: grid;
+  grid-template-columns: 1fr 92px 92px;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.menu-2col--head{
+  border-top: 0;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  font-weight: 800;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+}
+
+.menu-2col .item{
+  color: var(--text);
+}
+
+.menu-2col .col,
+.menu-2col .price{
+  text-align: right;
+}
+
+.menu-2col .price{
+  font-weight: 900;
+  color: var(--primary);
+}
+
+@media (max-width: 420px){
+  .menu-2col{
+    grid-template-columns: 1fr 78px 78px;
+  }
+}
+
+
