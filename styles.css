@@ -599,8 +599,8 @@ body{
 /* Marmitex com 2 colunas (Média / Grande) */
 .menu-2col{
   display: grid;
-  grid-template-columns: 1fr 92px 92px;
-  gap: 10px;
+  grid-template-columns: 1fr 75px 75px;
+  gap: 0px;
   padding: 10px 0;
   align-items: center;
   border-top: 1px solid rgba(255,255,255,.08);
@@ -635,4 +635,64 @@ body{
   }
 }
 
+/* ===== TABELA DE PREÇOS (Média / Grande) — ALINHAMENTO GARANTIDO ===== */
+.menu-table{
+  width: 100%;
+}
+
+.menu-table__head,
+.menu-table__row{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 75px 75px; /* 2 colunas de preço fixas */
+  gap: 0px;
+  align-items: start;
+}
+
+.menu-table__head{
+  padding: 12px 0;
+  font-weight: 900;
+  color: var(--muted);
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.menu-table__row{
+  padding: 0px 0;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.menu-table__row:last-child{
+  border-bottom: none;
+}
+
+.menu-item__title{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.menu-item__desc{
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.menu-price{
+  text-align: right;
+  font-weight: 900;
+  color: var(--primary);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums; /* números alinhados */
+  font-feature-settings: "tnum" 1;
+  padding-top: 2px;
+}
+
+/* Mobile */
+@media (max-width: 520px){
+  .menu-table__head,
+  .menu-table__row{
+    grid-template-columns: minmax(0, 1fr) 92px 92px;
+    gap: 10px;
+  }
+  .menu-item__title{ font-size: 18px; }
+}
 
