@@ -741,3 +741,89 @@ body{
   border: 1px solid rgba(255,209,0,.28);
   background: rgba(255,209,0,.10);
 }
+
+/* ============================
+   AJUSTES MOBILE
+   ============================ */
+
+@media (max-width: 900px){
+
+  body{
+    font-size: 15px;
+  }
+
+  .header__inner{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .banner{
+    height: 200px;
+  }
+
+  .banner__overlay h1{
+    font-size: 28px;
+  }
+
+  .banner__overlay p{
+    font-size: 15px;
+  }
+
+  .hero__grid{
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content h1{
+    font-size: 28px;
+  }
+
+  .actions{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn{
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .info-cards{
+    grid-template-columns: 1fr;
+  }
+
+  .menu-table__head,
+  .menu-table__row{
+    grid-template-columns: minmax(0,1fr) 82px 82px;
+    gap: 6px;
+  }
+
+  .menu-item__title{
+    font-size: 17px;
+  }
+
+  .menu-item__desc{
+    font-size: 14px;
+  }
+
+  .cta-bar{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-bar .btn{
+    width: 100%;
+  }
+
+  .footer__inner{
+    font-size: 13px;
+  }
+
+}
