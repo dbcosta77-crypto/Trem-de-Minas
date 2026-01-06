@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tremdeminasrestaurante.com.br/sitemap.xml

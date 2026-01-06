@@ -599,11 +599,17 @@ body{
 /* Marmitex com 2 colunas (Média / Grande) */
 .menu-2col{
   display: grid;
-  grid-template-columns: 1fr 75px 75px;
-  gap: 0px;
+  grid-template-columns: 1fr 70px 70px;
+  gap: 6px;
   padding: 10px 0;
   align-items: center;
   border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.menu-price{
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
 }
 
 .menu-2col--head{
@@ -631,7 +637,7 @@ body{
 
 @media (max-width: 420px){
   .menu-2col{
-    grid-template-columns: 1fr 78px 78px;
+    grid-template-columns: 1fr 75px 75px;
   }
 }
 
@@ -643,9 +649,15 @@ body{
 .menu-table__head,
 .menu-table__row{
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 75px 75px; /* 2 colunas de preço fixas */
-  gap: 0px;
+  grid-template-columns: minmax(0, 1fr) 70px 70px; /* 2 colunas de preço fixas */
+  gap: 6px;
   align-items: start;
+}
+
+.menu-price{
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
 }
 
 .menu-table__head{
@@ -696,3 +708,36 @@ body{
   .menu-item__title{ font-size: 18px; }
 }
 
+.btn--instagram{
+  background: linear-gradient(
+    135deg,
+    #833AB4,
+    #C13584,
+    #FD1D1D,
+    #F56040,
+    #FDCB82
+  );
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: .2px;
+  border: 1px solid rgba(0,0,0,.35);
+  box-shadow: 0 10px 22px rgba(0,0,0,.35);
+  text-shadow: 0 2px 6px rgba(0,0,0,.45); /* <-- AQUI está o ganho de contraste */
+}
+
+.btn--instagram:hover{
+  filter: brightness(1.15) contrast(1.05);
+}
+
+/* Segunda divisão abaixo do WhatsApp */
+.cta-bar--secondary{
+  margin-top: 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,209,0,.28);
+  background: rgba(255,209,0,.10);
+}
